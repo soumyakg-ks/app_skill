@@ -47,8 +47,8 @@ jobs:
 
       - name: Trigger Deploy on Render
         env:
-          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
-          RENDER_SERVICE_ID: ${{ secrets.RENDER_SERVICE_ID }}
+          RENDER_API_KEY: ${{ secrets.rnd_54lL9oeN3D5JdSUUxMlbpyXwUtOv }}
+          RENDER_SERVICE_ID: ${{ secrets.srv-d79jn35m5p6s73a47do0 }}
         run: |
           echo "Triggering Render deploy for service: $RENDER_SERVICE_ID"
 
