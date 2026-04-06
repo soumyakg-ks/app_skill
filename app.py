@@ -9,7 +9,7 @@ def get_posts():
     response = requests.request("GET", url, headers=headers,data=payload)
     return jsonify({
         "data": response.json(),
-        "status": "success",
+        "status": "successfully triggered posts",
         "status_code": 200
     })
 
@@ -21,7 +21,7 @@ def get_comments():
     response = requests.request("GET", url, headers=headers,data=payload)
     return jsonify({
         "data": response.json(),
-        "status": "success",
+        "status": "successfully triggered comments",
         "status_code": 200
     })
 @app.route('/albums')
@@ -32,7 +32,7 @@ def get_albums():
     response = requests.request("GET", url, headers=headers,data=payload)
     return jsonify({
         "data": response.json(),
-        "status": "success",
+        "status": "successfully triggered albums",
         "status_code": 200
     })
 if __name__ == '__main__':
